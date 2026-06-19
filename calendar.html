@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar · McGill Students' Culinary Society</title>
+    <meta name="description" content="The full MSCS calendar of suppers, workshops, market mornings, and other gatherings.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="/calendar.css">
+</head>
+<body>
+    <nav class="top" id="nav">
+        <a href="/index.html" class="brand">
+            <span class="brand-mark"><img class="logo" src="img/logo.jpg"></span>
+            Culinary Society
+        </a>
+        <div class="nav-links">
+            <a href="/calendar.html" class="current">Calendar</a>
+            <a href="/team.html">Team</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div class="nav-right">
+            <span class="nav-meta">Est. 2016 · Montréal</span>
+            <a href="#" class="nav-cta">Join Us</a>
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span class="burger-label">
+                    <span class="open-text">Menu</span>
+                    <span class="close-text">Close</span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+        <div class="menu-overlay-top">
+            <div class="menu-overlay-top-left">McGill Culinary Society</div>
+            <div>Menu · 2026</div>
+        </div>
+
+        <div class="menu-overlay-grid">
+            <nav class="menu-overlay-nav">
+                <a href="/calendar.html" class="menu-item">
+                    <span class="num">02</span>
+                    <span class="label">Calendar</span>
+                    <span class="arrow">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                        </svg>
+                    </span>
+                </a>
+                <a href="/team.html" class="menu-item">
+                    <span class="num">03</span>
+                    <span class="label">Team</span>
+                    <span class="arrow">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                        </svg>
+                    </span>
+                </a>
+                <a href="/about.html" class="menu-item">
+                    <span class="num">04</span>
+                    <span class="label">About</span>
+                    <span class="arrow">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                        </svg>
+                    </span>
+                </a>
+                <a href="/contact.html" class="menu-item">
+                    <span class="num">05</span>
+                    <span class="label">Contact</span>
+                    <span class="arrow">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                        </svg>
+                    </span>
+                </a>
+            </nav>
+
+            <aside class="menu-feature">
+                <div class="menu-feature-tag">Up Next</div>
+                <div class="menu-feature-visual">
+                    <div class="menu-feature-date">
+                        <span class="big"></span>
+                        <span class="small"></span>
+                    </div>
+                </div>
+                <div class="menu-feature-title"></div>
+                <div class="menu-feature-meta"></div>
+                <a href="#" class="menu-feature-link">
+                    Reserve a seat
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                    </svg>
+                </a>
+            </aside>
+        </div>
+
+        <div class="menu-overlay-bottom">
+            <div class="menu-overlay-socials">
+                <a href="https://www.instagram.com/mcgillculinarysociety/">Instagram</a>
+                <a href="https://www.facebook.com/McGillCulinarySociety/">Facebook</a>
+                <a href="mailto:mcgillculinary@ssmu.ca">Email</a>
+            </div>
+            <a href="/contact.html" class="menu-feature-link">
+                Get in touch
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section class="cal-hero" data-section>
+            <div class="wrap">
+                <div class="cal-hero-crumb ui">
+                    <a href="/index.html">Home</a>
+                    <span class="bc-sep" aria-hidden="true">/</span>
+                    <span>Calendar</span>
+                </div>
+
+                <h1 class="cal-hero-title">
+                    <span class="line">The full</span>
+                    <span class="line"><em>calendar</em>.</span>
+                </h1>
+
+                <div class="cal-hero-bottom">
+                    <p class="cal-hero-lede">
+                        Workshops, suppers, market mornings, and the occasional one-off. The events team keeps this live in Google Calendar, this page mirrors it in real time.
+                    </p>
+                    <a id="subscribeBtn" class="btn-solid" hidden>
+                        Add to your calendar
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M2 8 L14 8 M9 3 L14 8 L9 13"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cal-section" data-section>
+            <div class="wrap">
+                <div class="cal-controls" id="calControls" hidden>
+                    <div class="cal-controls-left">
+                        <h2 class="cal-month-label" id="calMonthLabel"></h2>
+                    </div>
+                    <div class="cal-controls-right">
+                        <button class="cal-today-btn" id="calToday">Today</button>
+                        <div class="cal-arrows">
+                            <button class="cal-nav-btn" id="calPrev" aria-label="Previous month">
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+                                    <path d="M13 8 L3 8 M7 4 L3 8 L7 12"></path>
+                                </svg>
+                            </button>
+                            <button class="cal-nav-btn" id="calNext" aria-label="Next month">
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+                                    <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cal-weekheader" id="calWeekheader" hidden aria-hidden="true">
+                    <span>Sun</span>
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                </div>
+
+                <div class="cal-grid" id="calGrid" hidden></div>
+
+                <div id="calState" class="cal-state-wrap"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">McGill Culinary <em>Society</em></div>
+                    <p>A student society at McGill University. Cooking, eating, and gathering in Montréal since 2016.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>The Society</h4>
+                    <a href="/about.html">About</a>
+                    <a href="/team.html">Team</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Events</h4>
+                    <a href="/calendar.html">Calendar</a>
+                    <a href="/contact.html">Partner with us</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Elsewhere</h4>
+                    <a href="https://www.instagram.com/mcgillculinarysociety/">Instagram</a>
+                    <a href="https://www.facebook.com/McGillCulinarySociety/">Facebook</a>
+                    <a href="https://www.linkedin.com/company/mcgillculinary/">LinkedIn</a>
+                    <a href="mailto:mcgillculinary@ssmu.ca">Email</a>
+                    <a href="https://ssmu.ca/clubs/hobby-leisure-clubs/mcgill-students-culinary-society/">SSMU</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© <span id="year">2026</span> MSCS · 3480 McTavish, Montréal QC</div>
+                <div class="credit">Designed &amp; built by <a href="https://webyxlabs.com" target="_blank" rel="noopener"><em>Webyxlabs</em></a> · 2026</div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cal-modal" id="calModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="cal-modal-back" data-modal-close></div>
+        <article class="cal-modal-card">
+            <button class="cal-modal-close" data-modal-close aria-label="Close">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M4 4 L12 12 M12 4 L4 12"></path>
+                </svg>
+            </button>
+
+            <div id="modalDayView" hidden>
+                <div class="cal-modal-eyebrow ui" id="modalDayDate"></div>
+                <h3 class="cal-modal-title">Events on this day</h3>
+                <ul class="cal-modal-list" id="modalDayList"></ul>
+            </div>
+
+            <div id="modalEventView" hidden>
+                <button class="cal-modal-back-link" id="modalBackBtn" hidden>
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M13 8 L3 8 M7 4 L3 8 L7 12"></path>
+                    </svg>
+                    Back to the day
+                </button>
+                <div class="cal-modal-eyebrow ui" id="modalEyebrow"></div>
+                <h3 class="cal-modal-title" id="modalTitle"></h3>
+                <div class="cal-modal-meta ui" id="modalMeta"></div>
+                <div class="cal-modal-desc" id="modalDesc"></div>
+                <div class="cal-modal-actions" id="modalActions"></div>
+            </div>
+        </article>
+    </div>
+
+    <script src="calendar.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

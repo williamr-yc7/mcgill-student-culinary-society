@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Team · McGill Students' Culinary Society</title>
+    <meta name="description" content="The students who run the McGill Students' Culinary Society this year, and how to join them.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+    <nav class="top" id="nav">
+        <a href="/index.html" class="brand">
+            <span class="brand-mark"><img class="logo" src="img/logo.jpg"></span>
+            Culinary Society
+        </a>
+        <div class="nav-links">
+            <a href="/calendar.html">Calendar</a>
+            <a href="/team.html" class="current">Team</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div class="nav-right">
+            <span class="nav-meta">Est. 2016 · Montréal</span>
+            <a href="#join" class="nav-cta">Join Us</a>
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span class="burger-label">
+                    <span class="open-text">Menu</span>
+                    <span class="close-text">Close</span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+        <div class="menu-overlay-top">
+            <div class="menu-overlay-top-left">McGill Student's Culinary Society</div>
+            <div>Menu · 2026</div>
+        </div>
+
+        <div class="menu-overlay-grid">
+            <nav class="menu-overlay-nav">
+                <a href="/calendar.html" class="menu-item">
+                    <span class="num">02</span>
+                    <span class="label">Calendar</span>
+                    <span class="arrow">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                        </svg>
+                    </span>
+                </a>
+                <a href="team.html" class="menu-item">
+                    <span class="num">03</span>
+                    <span class="label">Team</span>
+                    <span class="arrow">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                        </svg>
+                    </span>
+                </a>
+                <a href="about.html" class="menu-item">
+                    <span class="num">04</span>
+                    <span class="label">About</span>
+                    <span class="arrow">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                        </svg>
+                    </span>
+                </a>
+            </nav>
+
+            <aside class="menu-feature">
+                <div class="menu-feature-tag">Up Next</div>
+                <div class="menu-feature-visual">
+                    <div class="menu-feature-date">
+                        <span class="big"></span>
+                        <span class="small"></span>
+                    </div>
+                </div>
+                <div class="menu-feature-title"></div>
+                <div class="menu-feature-meta"></div>
+                <a href="#" class="menu-feature-link">
+                    Reserve a seat
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                    </svg>
+                </a>
+            </aside>
+        </div>
+
+        <div class="menu-overlay-bottom">
+            <div class="menu-overlay-socials">
+                <a href="https://www.instagram.com/mcgillculinarysociety/">Instagram</a>
+                <a href="https://www.facebook.com/McGillCulinarySociety/">Facebook</a>
+                <a href="mcgillculinary@ssmu.ca">Email</a>
+            </div>
+            <a href="#join" class="menu-feature-link">
+                Become a member
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section class="team-hero" data-section>
+            <div class="wrap">
+                <div class="team-hero-crumb ui">
+                    <a href="/index.html">Home</a>
+                    <span class="bc-sep" aria-hidden="true">/</span>
+                    <span>Team</span>
+                </div>
+
+                <h1 class="team-hero-title">
+                    <span class="line">The <em>team</em>,</span>
+                    <span class="line">this year.</span>
+                </h1>
+
+                <p class="team-hero-lede">
+                    Few students, one stovetop. Officers usually serve one-year terms; contributors come and go with the seasons. Everyone here got the job by raising a hand.
+                </p>
+            </div>
+        </section>
+
+        <section class="roster" data-section>
+            <div class="wrap">
+                <div class="team-grid full">
+                    <a href="https://www.linkedin.com/in/ryan-mazaheri-47a765368?originalSubdomain=ca" class="face-card" data-reveal>
+                        <div class="face">
+                            <img class="face-photo" src="/img/team/ryan-mazaheri.png" alt="Ryan Mazaheri" onerror="this.style.display='none'">
+                            <span class="face-tag ui">Says hi</span>
+                        </div>
+                        <div class="face-name">Ryan Mazaheri</div>
+                        <div class="face-role">Co-President</div>
+                        <p class="face-bio">Keeps the calendar, mostly.</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/william-zhou-47a29b2b6/" class="face-card" data-reveal data-reveal-delay="1">
+                        <div class="face">
+                            <img class="face-photo" src="/img/team/will-zhou.png" alt="Will Zhou" onerror="this.style.display='none'">
+                            <span class="face-tag ui">Says hi too!</span>
+                        </div>
+                        <div class="face-name">William Zhou</div>
+                        <div class="face-role">Co-President</div>
+                        <p class="face-bio">Keeps the calendar, mostly.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="past-teams" data-section>
+            <div class="wrap">
+                <div class="section-tag ui" data-reveal>The Archive</div>
+                <h2 data-reveal>Teams of<br><em>years past</em>.</h2>
+                <div class="past-tabs" id="pastTeamTabs" data-reveal data-reveal-delay="1"></div>
+                <ul class="past-team-list" id="pastTeamList" data-reveal data-reveal-delay="1"></ul>
+            </div>
+        </section>
+
+        <section class="join" id="join" data-section>
+            <div class="wrap">
+                <div class="join-inner">
+                    <h2 data-reveal>Join the<br><em>team</em>.</h2>
+                    <div class="join-right" data-reveal data-reveal-delay="1">
+                        <p>Officer applications open every March. Contributors and one-off helpers are welcome any time, just send a note.</p>
+                        <a href="#" class="join-cta">
+                            Become a team member
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M2 8 L14 8 M9 3 L14 8 L9 13"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">McGill Student's Culinary <em>Society</em></div>
+                    <p>A student society at McGill University. Cooking, eating, and gathering in Montréal since 2016.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>The Society</h4>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Team</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Events</h4>
+                    <a href="/calendar.html">Calendar</a>
+                    <a href="/contact.html">Partner with us</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Elsewhere</h4>
+                    <a href="https://www.instagram.com/mcgillculinarysociety/">Instagram</a>
+                    <a href="https://www.facebook.com/McGillCulinarySociety/">Facebook</a>
+                    <a href="mcgillculinary@ssmu.ca">Email</a>
+                    <a href="https://ssmu.ca/clubs/hobby-leisure-clubs/mcgill-students-culinary-society/">SSMU</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© <span id="year">2026</span> MSCS · 3480 McTavish, Montréal QC</div>
+                <div class="credit">Designed &amp; built by <a href="https://webyxlabs.com" target="_blank" rel="noopener"><em>Webyxlabs</em></a> · 2026</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+    <script src="team.js"></script>
+</body>
+</html>

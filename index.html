@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McGill Students' Culinary Society</title>
+    <meta name="description" content="A student-run culinary society at McGill. Workshops, suppers, market mornings, and the occasional kitchen disaster, since 2016.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="top" id="nav">
+        <a href="#" class="brand">
+            <span class="brand-mark"><img class="logo" src="img/logo.jpg"></span>
+            Culinary Society
+        </a>
+        <div class="nav-links">
+            <a href="/calendar.html">Calendar</a>
+            <a href="/team.html">Team</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div class="nav-right">
+            <span class="nav-meta">Est. 2016 · Montréal</span>
+            <a href="#join" class="nav-cta">Join Us</a>
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span class="burger-label">
+                    <span class="open-text">Menu</span>
+                    <span class="close-text">Close</span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+        <div class="menu-overlay-top">
+            <div class="menu-overlay-top-left">McGill Student's Culinary Society</div>
+            <div>Menu · 2026</div>
+        </div>
+
+        <div class="menu-overlay-grid">
+            <nav class="menu-overlay-nav">
+                <a href="/calendar.html" class="menu-item">
+                    <span class="num">02</span>
+                    <span class="label">Calendar</span>
+                    <span class="arrow">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                        </svg>
+                    </span>
+                </a>
+                <a href="/team.html" class="menu-item">
+                    <span class="num">03</span>
+                    <span class="label">Team</span>
+                    <span class="arrow">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                        </svg>
+                    </span>
+                </a>
+                <a href="/about.html" class="menu-item">
+                    <span class="num">04</span>
+                    <span class="label">About</span>
+                    <span class="arrow">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                        </svg>
+                    </span>
+                </a>
+            </nav>
+
+            <aside class="menu-feature">
+                <div class="menu-feature-tag">Up Next</div>
+                <div class="menu-feature-visual">
+                    <div class="menu-feature-date">
+                        <span class="big"></span>
+                        <span class="small"></span>
+                    </div>
+                </div>
+                <div class="menu-feature-title"></div>
+                <div class="menu-feature-meta"></div>
+                <a href="#" class="menu-feature-link">
+                    Reserve a seat
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                    </svg>
+                </a>
+            </aside>
+        </div>
+
+        <div class="menu-overlay-bottom">
+            <div class="menu-overlay-socials">
+                <a href="https://www.instagram.com/mcgillculinarysociety/">Instagram</a>
+                <a href="https://www.facebook.com/McGillCulinarySociety/">Facebook</a>
+                <a href="mailto:mcgillculinary@ssmu.ca">Email</a>
+            </div>
+            <a href="#join" class="menu-feature-link">
+                Become a member
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero" data-section>
+            <div class="wrap">
+                <div class="hero-eyebrow ui">McGill Students' Culinary Society</div>
+
+                <h1 class="hero-title">
+                    <span class="line">A society</span>
+                    <span class="line">for people</span>
+                    <span class="line">who <em>eat</em>.</span>
+                </h1>
+
+                <div class="hero-bottom">
+                    <p class="hero-tag">Workshops, suppers, market mornings, and the occasional kitchen disaster, since 2016.</p>
+                    <a href="#" class="hero-cta">
+                        Join Us
+                        <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M2 8 L14 8 M9 3 L14 8 L9 13"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="ornament" aria-hidden="true">
+                    <svg viewBox="0 0 200 200" fill="none" stroke="#A8C083" stroke-width="1.2" stroke-linecap="round">
+                        <path d="M100 20 Q102 70 100 130 Q98 160 95 180"></path>
+                        <path d="M100 50 Q80 40 60 50 Q80 55 100 60"></path>
+                        <path d="M100 50 Q120 40 140 50 Q120 55 100 60"></path>
+                        <path d="M100 75 Q78 65 56 78 Q80 82 100 85"></path>
+                        <path d="M100 75 Q122 65 144 78 Q120 82 100 85"></path>
+                        <path d="M100 102 Q76 92 52 108 Q80 110 100 113"></path>
+                        <path d="M100 102 Q124 92 148 108 Q120 110 100 113"></path>
+                        <path d="M100 130 Q80 122 64 138 Q84 138 100 140"></path>
+                        <path d="M100 130 Q120 122 136 138 Q116 138 100 140"></path>
+                        <circle cx="100" cy="20" r="3" fill="#DAA73B" stroke="none"></circle>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Workshops</span><i></i>
+                <span>Suppers</span><i></i>
+                <span>Market mornings</span><i></i>
+                <span>Recipe swaps</span><i></i>
+                <span>Pop-up dinners</span><i></i>
+                <span>Kitchen disasters</span><i></i>
+                <span>Workshops</span><i></i>
+                <span>Suppers</span><i></i>
+                <span>Market mornings</span><i></i>
+                <span>Recipe swaps</span><i></i>
+                <span>Pop-up dinners</span><i></i>
+                <span>Kitchen disasters</span><i></i>
+            </div>
+        </div>
+
+        <section id="next" data-section>
+            <div class="wrap">
+                <div class="section-tag ui" data-reveal>Up Next</div>
+                <div class="next-event">
+                    <div class="next-event-visual" data-reveal>
+                        <div class="next-event-date-tag">
+                            <span class="big"><!--i.e: 30--></span>
+                            <span class="small"><!--i.e: May 2026--></span>
+                        </div>
+                        <div class="next-event-visual-label">
+                            <span><!--i.e: Pop-up Dinner--></span>
+                            <span><!--i.e: 04 / 12 spots left--></span>
+                        </div>
+                    </div>
+
+                    <div class="next-event-text" data-reveal data-reveal-delay="1">
+                        <h2></h2>
+                        <div class="meta">
+                            <span><!--i.e: Saturday--></span>
+                            <span><!--i.e: 7:00 PM--></span>
+                            <span><!--i.e: Thomson House--></span>
+                        </div>
+                        <p></p>
+                        <div class="next-event-actions">
+                            <a href="#" class="btn-solid">
+                                Reserve a seat
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M2 8 L14 8 M9 3 L14 8 L9 13"></path>
+                                </svg>
+                            </a>
+                            <a href="#season" class="btn-link">All events</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="practice" data-section>
+            <div class="wrap">
+                <div class="practice-head">
+                    <div class="section-tag ui" data-reveal>What we do</div>
+                    <h2 data-reveal>Four ways<br>to <em>show up</em>.</h2>
+                    <p class="practice-intro" data-reveal data-reveal-delay="1">No experience needed, no knives required to bring. Pick the thing that sounds least intimidating and start there.</p>
+                </div>
+
+                <div class="practice-list">
+                    <article class="practice-item" data-reveal>
+                        <span class="practice-num ui">01</span>
+                        <div class="practice-body">
+                            <h3>Workshops</h3>
+                            <p>Hands-on sessions where someone who knows what they're doing teaches the rest of us. Pasta one week, fermentation the next.</p>
+                        </div>
+                        <span class="practice-meta ui">Weekly · Thomson House</span>
+                        <span class="practice-arrow" aria-hidden="true">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                            </svg>
+                        </span>
+                    </article>
+
+                    <article class="practice-item" data-reveal data-reveal-delay="1">
+                        <span class="practice-num ui">02</span>
+                        <div class="practice-body">
+                            <h3>Suppers</h3>
+                            <p>Long-table dinners around a theme or a region. You show up hungry, you leave with a few new people to text.</p>
+                        </div>
+                        <span class="practice-meta ui">Monthly · Members + guests</span>
+                        <span class="practice-arrow" aria-hidden="true">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                            </svg>
+                        </span>
+                    </article>
+
+                    <article class="practice-item" data-reveal data-reveal-delay="2">
+                        <span class="practice-num ui">03</span>
+                        <div class="practice-body">
+                            <h3>Market mornings</h3>
+                            <p>Early walks through Jean-Talon and Atwater. We taste things, ask too many questions, and cook with whatever we drag home.</p>
+                        </div>
+                        <span class="practice-meta ui">Seasonal · Saturdays</span>
+                        <span class="practice-arrow" aria-hidden="true">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                            </svg>
+                        </span>
+                    </article>
+
+                    <article class="practice-item" data-reveal data-reveal-delay="3">
+                        <span class="practice-num ui">04</span>
+                        <div class="practice-body">
+                            <h3>Recipe swaps</h3>
+                            <p>A quieter night. Everyone brings one dish that means something, and the story that comes with it. The recipes end up on our site.</p>
+                        </div>
+                        <span class="practice-meta ui">Each term · Open mic style</span>
+                        <span class="practice-arrow" aria-hidden="true">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                            </svg>
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="season" class="season" data-section>
+            <div class="wrap">
+                <div class="season-head">
+                    <div>
+                        <div class="section-tag ui" data-reveal>The Season Ahead</div>
+                        <h2 data-reveal>Coming up<br>this <em>term</em>.</h2>
+                    </div>
+                    <a href="/calendar.html" class="btn-link" data-reveal>Full calendar</a>
+                </div>
+
+                <ul class="event-list">
+                    <li class="event-row" data-reveal>
+                        <span class="event-date ui">
+                            <strong><!--date--></strong>
+                            <!--Month-->
+                        </span>
+                        <span class="event-name"></span>
+                        <span class="event-venue ui"></span>
+                        <span class="event-spots ui"><!--i.e: 4 spots left--></span>
+                        <span class="event-go" aria-hidden="true">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="event-row" data-reveal data-reveal-delay="1">
+                        <span class="event-date ui">
+                            <strong>07</strong>
+                            Jun
+                        </span>
+                        <span class="event-name">Knife skills, properly this time</span>
+                        <span class="event-venue ui">SSMU Kitchen</span>
+                        <span class="event-spots ui">Open</span>
+                        <span class="event-go" aria-hidden="true">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="event-row" data-reveal data-reveal-delay="2">
+                        <span class="event-date ui">
+                            <strong>14</strong>
+                            Jun
+                        </span>
+                        <span class="event-name">Jean-Talon market morning</span>
+                        <span class="event-venue ui">Meet at Métro</span>
+                        <span class="event-spots ui">Open</span>
+                        <span class="event-go" aria-hidden="true">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="event-row" data-reveal data-reveal-delay="3">
+                        <span class="event-date ui">
+                            <strong>21</strong>
+                            Jun
+                        </span>
+                        <span class="event-name">Bread week: a slow Sunday</span>
+                        <span class="event-venue ui">Thomson House</span>
+                        <span class="event-spots ui">Waitlist</span>
+                        <span class="event-go" aria-hidden="true">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 8 L13 8 M9 4 L13 8 L9 12"></path>
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="creed" data-section>
+            <div class="wrap">
+                <div class="section-tag ui" data-reveal>What is MSCS</div>
+                <blockquote class="creed-quote" data-reveal>
+                    A student society for anyone who finds the kitchen a more
+                    interesting place than the library. <em>Everyone is welcome
+                    at the table.</em>
+                </blockquote>
+                <div class="creed-foot" data-reveal data-reveal-delay="1">
+                    <p>We run workshops, host suppers, visit chefs, and walk markets. You don't need to cook well to belong here, you just need to be curious and a little hungry.</p>
+                    <a href="/about.html" class="link ui">
+                        Read more about us
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M2 8 L14 8 M9 3 L14 8 L9 13"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="numbers" data-section>
+            <div class="wrap">
+                <div class="numbers-grid">
+                    <div class="stat" data-reveal>
+                        <span class="stat-num">600+</span>
+                        <span class="stat-label ui">Members on the list</span>
+                    </div>
+                    <div class="stat" data-reveal data-reveal-delay="1">
+                        <span class="stat-num">40</span>
+                        <span class="stat-label ui">Events a year</span>
+                    </div>
+                    <div class="stat" data-reveal data-reveal-delay="2">
+                        <span class="stat-num">12</span>
+                        <span class="stat-label ui">Years of cooking</span>
+                    </div>
+                    <div class="stat" data-reveal data-reveal-delay="3">
+                        <span class="stat-num">1</span>
+                        <span class="stat-label ui">Very long table</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">McGill Student's Culinary <em>Society</em></div>
+                    <p>A student society at McGill University. Cooking, eating, and gathering in Montréal since 2016.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>The Society</h4>
+                    <a href="/about.html">About</a>
+                    <a href="/team.html">Team</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Events</h4>
+                    <a href="/calendar.html">Calendar</a>
+                    <a href="/contact.html">Partner with us</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Elsewhere</h4>
+                    <a href="https://www.instagram.com/mcgillculinarysociety/">Instagram</a>
+                    <a href="https://www.facebook.com/McGillCulinarySociety/">Facebook</a>
+                    <a href="https://www.linkedin.com/company/mcgillculinary/">LinkedIn</a>
+                    <a href="mailto:mcgillculinary@ssmu.ca">Email</a>
+                    <a href="https://ssmu.ca/clubs/hobby-leisure-clubs/mcgill-students-culinary-society/">SSMU</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© <span id="year">2026</span> MSCS · 3480 McTavish, Montréal QC</div>
+                <div class="credit">Designed &amp; built by <a href="https://webyxlabs.com" target="_blank" rel="noopener"><em>Webyxlabs</em></a> · 2026</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
