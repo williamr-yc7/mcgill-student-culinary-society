@@ -871,6 +871,7 @@ section {
     position: relative;
     overflow: hidden;
     background: linear-gradient(160deg, #C66536 0%, #8A3A1F 55%, #2A1209 100%);
+    background-image: url(img/Cooking_template.avif);
     border-radius: 4px;
 }
 

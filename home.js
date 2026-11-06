@@ -204,7 +204,7 @@ function renderUpNext(ev) {
 
     const rsvpBtn = root.querySelector('.next-event-actions .btn-solid');
     if (rsvpBtn && ev.htmlLink) {
-        rsvpBtn.href = ev.htmlLink;
+        rsvpBtn.href = 'https://linktr.ee/mcgillstudentsculinarysociety?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafvepzkRH7K3JC6a2bYmeDzYWkkfMoC79EqoB3lBE_QBWGT85HytW9rJnojdQ_aem_llYxlj5lG2-xfqDGFuUjWw';
         rsvpBtn.target = '_blank';
         rsvpBtn.rel = 'noopener';
     }
@@ -239,7 +239,7 @@ function renderMenuFeature(ev) {
 
     const link = root.querySelector('.menu-feature-link');
     if (link && ev.htmlLink) {
-        link.href = ev.htmlLink;
+        link.href = '';
         link.target = '_blank';
         link.rel = 'noopener';
     }
@@ -253,7 +253,7 @@ function renderMenuFeatureEmpty() {
     if (visual) visual.style.display = 'none';
 
     const titleEl = root.querySelector('.menu-feature-title');
-    if (titleEl) titleEl.innerHTML = 'Nothing scheduled <em>just yet</em>';
+    if (titleEl) titleEl.innerHTML = 'Coming up <em>this term</em>...';
 
     const metaEl = root.querySelector('.menu-feature-meta');
     if (metaEl) metaEl.textContent = 'Between events';
@@ -319,7 +319,7 @@ function renderUpNextEmpty() {
             <div class="meta"><span>Between events</span></div>
             <p>We're between events right now. The full calendar has what's around the corner, and Instagram is the fastest way to hear about the next one.</p>
             <div class="next-event-actions">
-                <a href="/calendar.html" class="btn-solid">
+                <a href="" class="btn-solid">
                     See the calendar
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
                         <path d="M2 8 L14 8 M9 3 L14 8 L9 13"></path>
