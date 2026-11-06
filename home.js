@@ -76,6 +76,31 @@ const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 
+const BG_IMAGES = [
+    'img/random/cooking1.avif',
+    'img/random/cooking2.jpg',
+    'img/random/cooking3.jpg',
+    'img/random/cooking4.jpg',
+    'img/random/cooking5.jpg',
+    'img/random/cooking6.jpg',
+    'img/random/cooking7.jpg',
+    'img/random/cooking8.jpg',
+    'img/random/cooking9.jpg',
+    'img/random/cooking10.jpg',
+    'img/random/cooking11.jpg',
+    'img/random/cooking12.jpg',
+    'img/random/cooking13.jpg',
+    'img/random/cooking14.jpg',
+    'img/random/cooking15.jpg',
+    'img/random/cooking16.jpg',
+    'img/random/cooking17.jpg',
+];
+const bgPick = BG_IMAGES[Math.floor(Math.random() * BG_IMAGES.length)];
+document.querySelectorAll('.next-event-visual').forEach(el => {
+    el.style.setProperty('--bg', `url(${bgPick})`);
+});
+
+
 const CALENDAR_ID = 'e6840b77a0d5f21fcf0aa46da7e475693ceb687c1a4969955dfc15cfbecc441e@group.calendar.google.com';
 const API_KEY = 'AIzaSyBuVtVPzqwY1xYsCH26R_vmO9GTIx4LIQY';
 const TZ = 'America/Toronto';
@@ -239,7 +264,7 @@ function renderMenuFeature(ev) {
 
     const link = root.querySelector('.menu-feature-link');
     if (link && ev.htmlLink) {
-        link.href = '';
+        link.href = 'https://linktr.ee/mcgillstudentsculinarysociety?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafvepzkRH7K3JC6a2bYmeDzYWkkfMoC79EqoB3lBE_QBWGT85HytW9rJnojdQ_aem_llYxlj5lG2-xfqDGFuUjWw';
         link.target = '_blank';
         link.rel = 'noopener';
     }
@@ -319,7 +344,7 @@ function renderUpNextEmpty() {
             <div class="meta"><span>Between events</span></div>
             <p>We're between events right now. The full calendar has what's around the corner, and Instagram is the fastest way to hear about the next one.</p>
             <div class="next-event-actions">
-                <a href="" class="btn-solid">
+                <a href="/calendar.html" class="btn-solid">
                     See the calendar
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
                         <path d="M2 8 L14 8 M9 3 L14 8 L9 13"></path>

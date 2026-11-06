@@ -870,8 +870,10 @@ section {
     aspect-ratio: 4 / 5;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(160deg, #C66536 0%, #8A3A1F 55%, #2A1209 100%);
-    background-image: url(img/Cooking_template.avif);
+    background-image: var(--bg, url(img/random/cooking1.avif)), linear-gradient(160deg, #C66536 0%, #8A3A1F 55%, #2A1209 100%);
+    background-size: 75%, cover;
+    background-position: center, center;
+    background-repeat: no-repeat;
     border-radius: 4px;
 }
 
