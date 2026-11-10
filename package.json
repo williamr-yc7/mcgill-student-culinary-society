@@ -1,0 +1,11 @@
+{
+  "name": "mscs-site",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-recipes.mjs"
+  },
+  "devDependencies": {
+    "@xmldom/xmldom": "^0.8.15",
+    "jszip": "3.10.1"
+  }
+}
